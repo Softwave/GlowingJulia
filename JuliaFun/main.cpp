@@ -106,10 +106,10 @@ int main()
         // Draw the GUI
         ImGui::Begin("Glowing Julia Controls");
         ImGui::SliderInt("Iterations", &iterationUniform, 0, 600);
-        ImGui::SliderFloat("IMod", &iMod, 0.0, 5.0);
+        
         ImGui::SliderFloat("Mod 1", &mod1Uniform, 0.0, 50.0);
         ImGui::SliderFloat("Mod 2", &mod2Uniform, 0.65, 0.9);
-        ImGui::SliderFloat("Value 1", &value1, 0.95, 1.05);
+        ImGui::SliderFloat("IMod", &iMod, 0.0, 5.0);
         ImGui::SliderFloat("Value 2", &value2, -20.0, 20.0);
         ImGui::Separator();
         ImGui::SliderFloat("Break value", &bVal, 0.0, 30.0);
@@ -145,10 +145,9 @@ int main()
         
         shader.setUniform("time", timeUniform);
         shader.setUniform("iterations", iterationUniform);
-        shader.setUniform("imagineMod", iMod);
         shader.setUniform("mod1", mod1Uniform);
         shader.setUniform("mod2", mod2Uniform);
-        shader.setUniform("val1", value1);
+        shader.setUniform("imagineMod", iMod);
         shader.setUniform("val2", value2);
         shader.setUniform("brkVal", bVal);
  

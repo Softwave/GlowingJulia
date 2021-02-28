@@ -1,7 +1,7 @@
 uniform float time; 
 uniform vec2 resolution; 
 
-uniform float val1 = 1.0;
+float val1 = 1.0;
 uniform float val2 = 1.0;
 
 
