@@ -11,15 +11,16 @@ uniform float mod1 = 5.0;
 uniform float mod2 = 0.755; 
 uniform float panMod = 0.3; 
 
-uniform float zoom1 = 2.0;
-uniform float zoom2 = 1.0;
+
+
+uniform float imagineMod = 2.0;
 
 uniform int iterations; 
 
 vec2 complex_square(vec2 num)
 {
 	float real = num.x * num.x - num.y * num.y;
-	float imaginary = num.x * num.y * 2.0; 
+	float imaginary = num.x * num.y * imagineMod; 
 	return vec2(real, imaginary); 
 }
 
@@ -32,7 +33,7 @@ vec3 hsv(float h, float s, float v){
 void main(void) 
 {
 
-	vec2 uv = gl_FragCoord.xy / resolution * zoom1 - zoom2;
+	vec2 uv = gl_FragCoord.xy / resolution * 2.0 - 1.0;
 	//( gl_FragCoord.xy / resolution ) * 2.0 - 1.0;
 	vec2 c = vec2(val1, val2); // This can be tweaked 
 	
