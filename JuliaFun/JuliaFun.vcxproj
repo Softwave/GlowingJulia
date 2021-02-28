@@ -143,25 +143,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui-SFML.cpp" />
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui.cpp" />
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui_demo.cpp" />
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui_draw.cpp" />
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui_widgets.cpp" />
+    <ClCompile Include="imgui-SFML.cpp" />
+    <ClCompile Include="imgui.cpp" />
+    <ClCompile Include="imgui_demo.cpp" />
+    <ClCompile Include="imgui_draw.cpp" />
+    <ClCompile Include="imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui.ini" />
-    <None Include="frag.glsl" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imguisettings.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GlowingJulia.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frag.glsl" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="icon.ico" />

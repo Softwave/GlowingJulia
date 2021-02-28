@@ -35,6 +35,7 @@ void main(void)
 	vec2 uv = gl_FragCoord.xy / resolution * zoom1 - zoom2;
 	//( gl_FragCoord.xy / resolution ) * 2.0 - 1.0;
 	vec2 c = vec2(val1, val2); // This can be tweaked 
+	
 	vec2 v = uv;
 
 	//c.y *= -1.0;

@@ -18,34 +18,21 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui_demo.cpp">
+    <ClCompile Include="imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui_draw.cpp">
+    <ClCompile Include="imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui_widgets.cpp">
+    <ClCompile Include="imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui-SFML.cpp">
+    <ClCompile Include="imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui.cpp">
+    <ClCompile Include="imgui-SFML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imgui.ini">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="frag.glsl">
-      <Filter>Source Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="..\..\..\Documents\GitHub\BlazingMandelbrot\BlazingMandelbrot2\imguisettings.txt">
-      <Filter>Source Files</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -56,6 +43,11 @@
     <ResourceCompile Include="GlowingJulia.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="icon.ico">
