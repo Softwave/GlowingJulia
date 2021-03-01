@@ -17,7 +17,7 @@ uniform float imagineMod = 2.0;
 
 uniform int iterations; 
 uniform float zoom = 0.1; 
-uniform float zoomPosX = 0.755;
+uniform float zoomPosX = 0.137;
 
 vec2 complex_square(vec2 num)
 {
