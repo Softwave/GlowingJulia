@@ -1,3 +1,6 @@
+// Goofed up shader for program, feel free to edit and run the program again! 
+// By Jessia Leyba 2021 
+
 uniform float time; 
 uniform vec2 resolution; 
 
@@ -36,29 +39,24 @@ void main(void)
 {
 
 	vec2 uv = gl_FragCoord.xy / resolution * 2.0 - 1.0;
-	//( gl_FragCoord.xy / resolution ) * 2.0 - 1.0;
-	vec2 c = vec2(val1, val2); // This can be tweaked 
+	vec2 c = vec2(val1, val2); 
 	
 	vec2 v = uv;
 	v.x -= sqrt(zoomPosX * zoomPosX - 0.1 * 0.1);
 
-	//c.y *= -1.0;
-	//c /= pow(val1, time - 92.0);
-	//c.y += val2 * sin(time) /128.0;
-	//c.x -= sqrt(val3 * val3 - val4 * val4);
+
 
 	c.y *= -1; 
 	c /= pow(1.5, mod1 - 3.0);
 	c.y += 0.1;
 	c.x -= sqrt(mod2 * mod2 - 0.1 * 0.1);
-	//c.y += val2 * sin(time) /128.0;
-	//c.x -= sqrt(val3 * val3 - val4 * val4);
+
 
 	v /= pow(1.5, zoom - 3.0); 
 
 	
 
-	int count = 200;
+	int count = 100;
 	for (int i = 0; i < iterations; i++)
 	{
 		v = c + complex_square(v);
