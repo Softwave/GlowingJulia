@@ -27,6 +27,10 @@ float bVal = 20.0f;
 
 float iMod = 2.0f;
 
+float zm = 0.1f;
+float zoomPosXUniform = 0.755f;
+
+float pMod = 0.3f; 
 
 int main()
 {   
@@ -106,10 +110,12 @@ int main()
         // Draw the GUI
         ImGui::Begin("Glowing Julia Controls");
         ImGui::SliderInt("Iterations", &iterationUniform, 0, 600);
-        
         ImGui::SliderFloat("Mod 1", &mod1Uniform, 0.0, 50.0);
         ImGui::SliderFloat("Mod 2", &mod2Uniform, 0.65, 0.9);
         ImGui::SliderFloat("IMod", &iMod, 0.0, 5.0);
+        ImGui::SliderFloat("Zoom", &zm, 0.0, 50.0);
+        ImGui::SliderFloat("Pos X", &zoomPosXUniform, 0.0, 0.8);
+
         ImGui::SliderFloat("Value 2", &value2, -20.0, 20.0);
         ImGui::Separator();
         ImGui::SliderFloat("Break value", &bVal, 0.0, 30.0);
@@ -145,6 +151,8 @@ int main()
         
         shader.setUniform("time", timeUniform);
         shader.setUniform("iterations", iterationUniform);
+        shader.setUniform("zoom", zm);
+        shader.setUniform("zoomPosX", zoomPosXUniform);
         shader.setUniform("mod1", mod1Uniform);
         shader.setUniform("mod2", mod2Uniform);
         shader.setUniform("imagineMod", iMod);

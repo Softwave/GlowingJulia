@@ -16,6 +16,8 @@ uniform float panMod = 0.3;
 uniform float imagineMod = 2.0;
 
 uniform int iterations; 
+uniform float zoom = 0.1; 
+uniform float zoomPosX = 0.755;
 
 vec2 complex_square(vec2 num)
 {
@@ -38,6 +40,7 @@ void main(void)
 	vec2 c = vec2(val1, val2); // This can be tweaked 
 	
 	vec2 v = uv;
+	v.x -= sqrt(zoomPosX * zoomPosX - 0.1 * 0.1);
 
 	//c.y *= -1.0;
 	//c /= pow(val1, time - 92.0);
@@ -50,6 +53,9 @@ void main(void)
 	c.x -= sqrt(mod2 * mod2 - 0.1 * 0.1);
 	//c.y += val2 * sin(time) /128.0;
 	//c.x -= sqrt(val3 * val3 - val4 * val4);
+
+	v /= pow(1.5, zoom - 3.0); 
+
 	
 
 	int count = 200;
